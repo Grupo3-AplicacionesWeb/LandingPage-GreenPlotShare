@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles/navbar-style.css">
     <link rel="stylesheet" href="styles/home-style.css">
     <link rel="stylesheet" href="styles/allies-style.css">
@@ -14,32 +17,51 @@
     <link rel="stylesheet" href="styles/footer-style.css">
     <title>GreenPlotShare</title>
 </head>
-<body>
 
-    <nav class="navigator">
-        <div class="navigator-container">
-            <div class="menu__navigator">
-                <img src="assets/logos/Blanco1.jpg" class="logo__navigator">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#allies">Aliado</a></li>
-                    <li><a href="#testimony">Testimonios</a></li>
-                    <li><a href="#mision-vision">Misión y Visión</a></li>
-                </ul>
-            </div>
-            <div class="button-navigator">
-                <div class="button-register__navigator"><h3>Registrarse</h3></div>
-                <div class="button-login__navigator"><h3>Iniciar Sesión</h3></div>
-            </div>
+<body>
+    <nav class="white">
+        <div class="nav-wrapper  container">
+            <a href="#!" class="brand-logo"><img style="width:100px" src="assets/logos/Blanco1.jpg"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                    class="material-icons black-text">menu</i></a>
+            <ul class="right hide-on-med-and-down ">
+                <li><a href="#" class="black-text">Home</a></li>
+                <li><a href="#" class="black-text">Aliado</a></li>
+                <li><a href="#" class="black-text">Testimonios</a></li>
+                <li><a href="#" class="black-text">Misión y Visión</a></li>
+                <li class="center-align">
+                    <a class="waves-effect light-green accent-2 black-text btn">Registrarse</a>
+                </li>
+                <li class="center-align">
+                    <a class="waves-effect black white-text btn">Iniciar sesión</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Aliado</a></li>
+        <li><a href="#">Testimonios</a></li>
+        <li><a href="#">Misión y Visión</a></li>
+        <div class="center-align row" >
+            <a class="waves-effect  light-green accent-2 black-text btn">Registrarse</a>
+        </div>
+        <div class="center-align">
+            <a class="waves-effect black white-text btn">Iniciar sesión</a>
+        </div>
+
+    </ul>
 
     <section class="home" id="home">
         <div class="home-container">
-            <h2>Bienvenido a GreenPlotShare, tu plataforma para conectar propietarios de terrenos con entusiastas de la agricultura urbana.</h2>
-            <h3>"¡Únete a la comunidad donde cientos han encontrado sus terrenos ideales para cultivar, de manera confiable y segura!"</h3>
-            <div class="button-information"><h3>Saber más</h3></div>
+            <h2>Bienvenido a GreenPlotShare, tu plataforma para conectar propietarios de terrenos con entusiastas de la
+                agricultura urbana.</h2>
+            <h3>"¡Únete a la comunidad donde cientos han encontrado sus terrenos ideales para cultivar, de manera
+                confiable y segura!"</h3>
+            <div class="button-information">
+                <h3>Saber más</h3>
+            </div>
         </div>
     </section>
 
@@ -63,9 +85,15 @@
         <div class="feature-container">
             <img class="logo__feature" src="assets/logos/Negro.jpg">
             <ul class="feature-list__feature">
-                <li><h3>Busca un terreno</h3></li>
-                <li><h3>Cultiva desde tu casa</h3></li>
-                <li><h3>Consume tus propios cultivos</h3></li>
+                <li>
+                    <h3>Busca un terreno</h3>
+                </li>
+                <li>
+                    <h3>Cultiva desde tu casa</h3>
+                </li>
+                <li>
+                    <h3>Consume tus propios cultivos</h3>
+                </li>
             </ul>
 
             <img class="decoration-1 decoration" src="assets/material/decoration.webp" alt="">
@@ -145,7 +173,8 @@
             <img class="img__mision" src="assets/material/mision.webp" alt="">
             <div class="text__mision">
                 <h2>Misión</h2>
-                <p>En GreenPlotShare, nuestra misión es promover la agricultura sostenible al facilitar el acceso a terrenos rurales para el cultivo.</p>
+                <p>En GreenPlotShare, nuestra misión es promover la agricultura sostenible al facilitar el acceso a
+                    terrenos rurales para el cultivo.</p>
             </div>
         </div>
         <div class="vision-container">
@@ -169,6 +198,13 @@
         </ul>
         <h3>Copyright © 2024 GreenPlotShare, Inc.</h3>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
 </body>
+
 </html>
