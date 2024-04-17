@@ -1,0 +1,78 @@
+.mision-vision{
+    background-color: #121E13;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.mision-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.text__mision{
+    margin-left: 200px;
+    width: 400px;
+    font-size: 20px;
+}
+
+
+.img__mision{
+    border-radius: 20px;
+}
+
+.vision-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text__vision{
+    margin-right: 200px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.img__vision{
+    border-radius: 20px;
+}
+
+
+@media (max-width: 1300px) {
+
+    .mision-container{
+        flex-direction: column;
+
+    }
+
+    .text__mision{
+        margin-top: 50px;
+        text-align: center;
+        margin-left: unset;
+    }
+
+    .img__mision{
+        width: 70%;
+    }
+
+    .vision-container{
+        flex-direction: column;
+
+    }
+
+    .text__vision{
+        margin-top: 50px;
+        text-align: center;
+        margin-right: unset;
+    }
+
+    .img__vision{
+        width: 70%;
+    }
+
+}

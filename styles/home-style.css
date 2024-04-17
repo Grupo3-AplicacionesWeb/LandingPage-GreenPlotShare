@@ -1,0 +1,77 @@
+.home{
+    background-color: orange;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/material/agricultura-sostenible.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-container{
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-container h2{
+    width: 50%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.home-container h3{
+    width: 50%;
+    font-size: 20px;
+}
+
+.button-information{
+    color: black;
+    background-color: #F2FCF2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    border-radius: 100px;
+    margin-top: 100px;
+    transition: background-color 250ms ease-in-out;
+}
+.button-information:hover {
+    background-color: #1FF66E;
+}
+
+.button-information h3{
+    margin: 0;
+}
+
+@media (max-width: 1300px) {
+
+    .home-container h2{
+        width: 55%;
+        font-size: 30px;
+    }
+
+    .home-container h3{
+        width: 55%;
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .home-container h2{
+        width: 70%;
+        font-size: 30px;
+    }
+
+    .home-container h3{
+        width: 70%;
+        font-size: 15px;
+    }
+}

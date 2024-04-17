@@ -1,0 +1,51 @@
+.allies{
+    background-color: #F2FCF2;
+    padding-top: 70px;
+}
+
+
+.allies-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title__allies-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.pictures__allies-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+.pictures__allies-container img{
+    margin: 20px;
+}
+
+.ministerio__allies-container{
+    width: 300px;
+    height: 60px;
+}
+
+.alicorp__allies-container{
+    width: 300px;
+    height: 120px;
+}
+
+.ecosac__allies-container{
+    width: 150px;
+    height: 100px;
+}
+
+.camposol__allies-container{
+    width: 150px;
+    height: 150px;
+}
